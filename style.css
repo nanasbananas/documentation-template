@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+/* General Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+textarea,
+input,
+select,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    font-family: "Nunito", sans-serif;
+    color: #750951;
+}
+
+/* Body and HTML Reset */
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #c19cea;
+    text-align: center;
+}
+
+/* Navigation Styling */
+nav {
+    font-family: "Nunito", sans-serif;
+    background-color:#f6f890;;
+    color: #b937c2;
+    display: flex;
+}
+
+nav header {
+    padding: 8px;
+    display: inline;
+}
+
+nav header a {
+    text-decoration: none;
+    color: #b937c2;
+}
+
+nav header a:hover {
+    color: #23dc26;
+}
+
+nav header+input:checked+div {
+    display: block;
+}
+
+nav div {
+    display: none;
+    margin-left: auto;
+}
+
+nav div ul {
+    list-style: none;
+    display: flex;
+    margin: 0 10px;
+}
+
+nav div ul li a {
+    display: inline-block;
+    padding: 8px;
+    color: #b937c2;
+    text-decoration: none;
+}
+
+nav div ul li:hover {
+    background-color: #27d3f6;
+}
+
+nav div ul li ul {
+    right: 0;
+    position: relative;
+    background: pink;
+}
+
+/* Responsive Navigation */
+@media (max-width: 630px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav div {
+        margin: auto;
+    }
+
+    nav div ul {
+        padding: 0;
+    }
+
+    nav div ul li {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    nav div ul li[active],
+    nav div ul li.active {
+        border: 1px solid #00c853;
+        border-bottom: none;
+    }
+
+
+}
+
+/* Navigation Styling for Larger Screens */
+@media (min-width: 630px) {
+    nav div ul li.active,
+    nav div ul li[active] {
+        border: 1px solid #00c853;
+        border-bottom: none;
+        border-top: none;
+    }
+
+    nav header label {
+        display: none;
+    }
+}
+
+/* Container Styling */
+section[container] {
+    max-width: 38em;
+    margin: auto;
+    padding: 5px;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.35em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+/* Link Styling */
+a {
+    color: #3f3f88;
+}
+
+a:hover {
+    color: #212121;
+}
+
+/* Mark Styling */
+mark {
+    background-color: #f6f890;
+}
+
+/* Code Styling */
+code {
+    font-family: monospace;
+    background-color: #bdbdbd;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+code {
+    font-family: monospace;
+    background-color: #f6f890;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+pre {
+    font-family: monospace;
+    background: #f6f890;
+    overflow-x: auto;
+    text-align: left;
+    padding: 5px;
+}
+
+pre code {
+    font-family: monospace;
+    color: #fc2eb7;
+    display: block;
+    padding: 0 10px;
+    background: transparent;
+}
+
+
+
+/* Overflow Styling */
+div[overflow] {
+    overflow-x: auto;
+    max-width: 100vw;
+}
+
+div[overflow] ::-webkit-scrollbar {
+    height: 0;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+video {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+summary {
+    font-size: 150%;
+    font-weight: 900;
+    padding: 20px;
+}
