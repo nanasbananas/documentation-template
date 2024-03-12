@@ -109,7 +109,13 @@
 	}
 			</code></pre>
 		
-		<p>Der Code ist sehr simpel. Es sind Dreiecke die sich nur durch ihre Farbe und Position unterscheiden,außerdem werden sie nach hinten hin größer.</p>
+		<p>Der Code ist sehr simpel. Er erstellt eine Grafik, die verschiedene Reihen von Dreiecken darstellt, 
+			um eine abstrakte Landschaft zu bilden. In der setup()-Funktion wird die Größe des Zeichenbereichs festgelegt und der 
+			Hintergrund auf Schwarz gesetzt. Dann werden mehrere Reihen von Dreiecken in verschiedenen Grautönen gezeichnet, 
+			um eine Landschaft mit einer perspektivischen Darstellung zu erzeugen. Die keyPressed()-Funktion speichert die Grafik als 
+			Bild, wenn die Taste "s" gedrückt wird.
+			Die Landschaft besteht aus fünf horizontalen Reihen von Dreiecken, die sich von oben nach unten erstrecken. Jede Reihe hat eine unterschiedliche 
+			Graustufe, die von oben nach unten abnimmt, dies vermittelt uns den Eindruck von Tiefe und Entfernung.</p>
 	
 	</details>
 <details>
@@ -185,8 +191,15 @@
 	  endShape(CLOSE);
 	}
 </code></pre>
-<p>Im Code arbeitete ich mit push und pop. Die Blütenblätter und die Farben rotieren. Sonst ist der Code eigentlich ebenfalls sehr simpel.
-	Was an diesem Code ebenfalls interessant ist, ist dass die Funktion random die Farben kontrolliert. Die Farbe kann einen Wert von 0-255 haben.
+<p> Der Code erstellt eine Animation von sich drehenden Blumen. 
+	Zu Beginn legt man die Variablen fest, dann die Anzahl der Blumen (numFlowers) 
+	sowie Arrays für die Rotationswinkel (angles) und die Farben der Blütenblätter (colors). 
+	In der setup()-Funktion wird der Canvas erstellt und Farben für die Blütenblätter generiert. 
+	In der draw()-Funktion wird der Hintergrund gelöscht, die Canvas in die Mitte verschoben und für 
+	jede Blume die Funktion zum Zeichnen der Blume aufgerufen. Die Blumen drehen sich um ihre eigene Achse, 
+	die Rotationswinkel erhöhen sich ständig. Die Funktion drawFlower() zeichnet eine Blume mit sechs Blütenblättern, 
+	für jedes Blütenblatt wird dann eine Farbe aus dem Array petalColors verwendet. Die Funktion drawPetal() zeichnet ein 
+	einzelnes Blütenblatt als geschlossene Form mit Bezierkurven. Insgesamt kann in der Animation jedes Blütenblatt eine random Farbe von 0-255 bekommen.
 </p>
 </details>
 <details>
